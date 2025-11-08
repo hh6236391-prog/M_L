@@ -1,0 +1,28 @@
+quality_weights:
+  face_detection: 0.25
+  sharpness: 0.20
+  brightness: 0.12
+  contrast: 0.08
+  white_balance: 0.06
+  pose_quality: 0.12
+  composition: 0.08
+  focus_quality: 0.05
+  noise_level: 0.02
+  artifacts: 0.02
+
+thresholds:
+  min_face_size: 0.06    # Reasonable minimum
+  max_face_size: 0.85    # Reasonable maximum  
+  min_sharpness: 30.0    # Balanced sharpness can be 50.0
+  min_brightness: 25.0   # Balanced brightness
+  max_brightness: 230.0  # Balanced brightness
+  min_contrast: 18.0     # Balanced contrast
+  min_pose_quality: 0.3  # Reasonable pose
+  min_eye_visibility: 0.2 #can be 0.4
+
+face_detection:
+  confidence_threshold: 0.5  # Balanced confidence
+
+computation:
+  max_image_size: 1024
+  batch_size: 5
