@@ -1,0 +1,7 @@
+{
+  "project_name": "Face Group Recognition System",
+  "version": "1.0",
+  "face_embedding_model": "insightface",
+  "num_images_per_person": 10,
+  "log_level": "INFO"
+}
