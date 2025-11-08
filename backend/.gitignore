@@ -1,19 +1,38 @@
-# Ignore virtual environment
+# Virtual environments
 .venv/
+.venv311/
+env/
+venv/
 
-# Ignore Python cache
+# Cache and logs
 __pycache__/
 *.pyc
+*.log
 
-# Ignore system files
+# OS junk
 .DS_Store
 
-# Ignore sensitive and config files
-.env
-config.json
+# Keep folder structure (data, logs, images)
+!images/
+!data/
+!logs/
 
-# Ignore logs and datasets
-*.log
-logs/
-data/
-images/
+# Ignore contents but not folders
+images/*
+!images/.gitkeep
+
+data/*
+!data/.gitkeep
+
+logs/*
+!logs/.gitkeep
+
+# Large models
+*.onnx
+*.dat
+*.pth
+*.zip
+*.tar
+*.gz
+
+
