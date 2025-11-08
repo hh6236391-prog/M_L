@@ -189,3 +189,4 @@ def save_best_photos(best_photos: List[dict], output_dir: str):
 
         logger.info(f"✅ Saved best photo: {dst_path.name}")
         logger.info(f"🧾 Report generated: {report_path.name}")
+
